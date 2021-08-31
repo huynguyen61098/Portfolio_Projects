@@ -2,6 +2,8 @@
 	Melbourne Housing Data Cleaning and Exploration
 	
 	Skills used: Join, CTE's, Temp Table, Window Function, Aggregation Function, Creating Views, Converting Data Types
+	
+	The data source: https://www.kaggle.com/dansbecker/melbourne-housing-snapshot
 
 	*/
 
@@ -196,7 +198,7 @@
 	FROM Portfolio_Project..melb_data
 	ORDER BY 1, 2, 3, 4 DESC
 
-	-- Here's another way using Temp Table here for example purpose only 
+	-- Here's another way. I using Temp Table here for example purpose only 
 	DROP TABLE if EXISTS #PriceByArea
 	CREATE TABLE #PriceByArea
 	(RegionName nvarchar(255),
